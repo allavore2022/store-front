@@ -13,7 +13,7 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo"><img class="logo" src="/images/logo.png" alt="Meet Your Maker HI Logo" /></Link>
+                    <Link to="/" className="navbar-logo"><img class="logo" src="images/logo.png" alt="Meet Your Maker HI Logo" /></Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>

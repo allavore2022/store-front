@@ -26,7 +26,7 @@ function Products({cart, setCart}) {
     return (
         <>
 
-        <img class="banner" src="images/ProductsBanner.png" alt="Meet Your Maker HI Banner" />
+        <img class="banner" src="https://allavore2022.github.io/store-front/images/ProductsBanner.png" alt="Meet Your Maker HI Banner" />
         <div class="container">
             <div class="row justify-content-center">
                 {
