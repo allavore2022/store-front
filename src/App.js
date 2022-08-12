@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
+import Products from './components/pages/Products';
+import Cart from './components/pages/Cart';
+import Footer from './components/pages/Footer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 
 function App() {
+
+  const [cart, setCart] = useState(cartFromLocalStorage);
+  
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+  }, [cart]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/products" element={<Products cart={ cart } setCart={ setCart } />}/>
+        <Route path="/cart" element={<Cart cart={ cart } setCart={ setCart } />}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+    </>
   );
 }
 
