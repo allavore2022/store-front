@@ -11,7 +11,7 @@ function Footer() {
             <div class="container">
                 <div class="row text-center">
                 <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-dark"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"

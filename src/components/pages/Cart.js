@@ -19,6 +19,10 @@ function Cart({ cart, setCart }) {
         if (arr[ind].quantity === 0) arr[ind].quantity = 1;
         setCart([...arr]);
       };
+
+    const cartIsEmpty = () => {
+        return cart.size() === 0;
+    };
     
     return (
         <>
@@ -28,7 +32,7 @@ function Cart({ cart, setCart }) {
             <div class="row justify-content-center">
             {
                 cart.map( (item, idx) => (
-                        <div className="card col-3 m-3" key={ idx }>
+                        <div className="card col-xs-1 col-sm-1 col-md-3 col-lg-3 col-xl-3 m-3" key={ idx }>
                             <img class="card-img-top" src= { item.picture } alt= { item.name } />
                             <div class="card-body">
                                 <h5 class="card-title">{ item.name }</h5>
@@ -50,8 +54,8 @@ function Cart({ cart, setCart }) {
                 )//end of cart loop
             }
             </div>
-        <div>
-            <h1>Total Cost: ${getTotalSum()}</h1>
+            <div>
+                <h1 class="text-center m-3">{cart.length === 0 ? "Cart is Empty" : "Total is: $" + getTotalSum()}</h1>
             </div> 
         </div>
         </>

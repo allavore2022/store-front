@@ -31,7 +31,7 @@ function Products({cart, setCart}) {
             <div class="row justify-content-center">
                 {
                     Items.map( (item, idx) => (
-                            <div className="card col-3 m-3" key={ idx }>
+                            <div className="card col-xs-1 col-sm-1 col-md-3 col-lg-3 col-xl-3 m-3" key={ idx }>
                                 <img class="card-img-top" src= { item.picture } alt= { item.name } />
                                 <div class="card-body">
                                     <h5 class="card-title">{ item.name }</h5>
