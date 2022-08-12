@@ -22,7 +22,7 @@ function Cart({ cart, setCart }) {
     
     return (
         <>
-        <img class="banner" src="/images/Cart.png" alt="Cart banner" />
+        <img class="banner" src="images/Cart.png" alt="Cart banner" />
 
         <div class="container">
             <div class="row justify-content-center">

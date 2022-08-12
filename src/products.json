@@ -4,41 +4,41 @@
         "name": "Acai Bowl Sticker",
         "description": "This listing is for 1 extra durable waterproof plain holographic sticker. This sticker is 2.75 x 2.5 inches.",
         "price": 2.00,
-        "picture": "/images/AcaiSticker.webp"
+        "picture": "images/AcaiSticker.webp"
     },
     {
         "id": 2,
         "name": "All Bus Sticker",
         "description": "This listing is for 1 extra durable waterproof plain holographic sticker. This sticker is 3 x 2.75 inches.",
         "price": 2.00,
-        "picture": "/images/AllBusSticker.webp"
+        "picture": "images/AllBusSticker.webp"
     },
     {
         "id": 3,
         "name": "Kahuku Circle Sticker",
         "description": "This listing is for (1) extra durable waterproof holographic sticker. This sticker has a 3 inch circumference.",
         "price": 2.00,
-        "picture": "/images/KahukuCircleSticker.webp"
+        "picture": "images/KahukuCircleSticker.webp"
     },
     {
         "id": 4,
         "name": "Kahuku Heart Sticker",
         "description": "This listing is for (1) extra durable waterproof holographic sticker. This sticker is 3.25 x 2.8 inches.",
         "price": 2.00,
-        "picture": "/images/KahukuHeartSticker.webp"
+        "picture": "images/KahukuHeartSticker.webp"
     },
     {
         "id": 5,
         "name": "Kerropi Sticker",
         "description": "This listing is for (1) waterproof glossy sticker. This sticker is 2.25 x 1.75 inches. This sticker does not have an extra durable protective layer, and although it is waterproof, it is NOT SCRATCHPROOF. However, they are not easily scratched and are fairly durable.",
         "price": 2.00,
-        "picture": "/images/KerropiSticker.webp"
+        "picture": "images/KerropiSticker.webp"
     },
     {
         "id": 6,
         "name": "Seattle Seahawks Sticker",
         "description": "This listing is for 1 extra durable waterproof plain holographic sticker. This sticker is 2.75 x 2.5 inches.",
         "price": 2.00,
-        "picture": "/images/SeahawksSticker.webp"
+        "picture": "images/SeahawksSticker.webp"
     }
 ]
