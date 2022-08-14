@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({ cart }) {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -31,6 +31,7 @@ function Navbar() {
                         <li className='nav-item'>
                             <Link to="/cart" className='nav-links' onClick={closeMobileMenu}>
                                 <i className="fas fa-shopping-cart" id='cart'></i>
+                                <span id="cart-span">{cart.length}</span>
                             </Link>
                         </li>
                     </ul>

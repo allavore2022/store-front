@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import Products from './components/pages/Products';
 import Cart from './components/pages/Cart';
 import Footer from './components/pages/Footer';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 
 const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 
@@ -21,9 +21,10 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <Navbar />
+      <Navbar cart={ cart } />
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/store-front" element={<Navigate to="/"/>}/>
         <Route path="/products" element={<Products cart={ cart } setCart={ setCart } />}/>
         <Route path="/cart" element={<Cart cart={ cart } setCart={ setCart } />}/>
       </Routes>

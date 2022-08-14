@@ -74,6 +74,15 @@ img.logo {
     .menu-icon {
       display: none;
     }
+
+    #cart-span {
+      padding: 0 3px;
+      background-color: #DE5D81;
+      font-weight: bold;
+      border-radius: 5px;
+      position: relative;
+      top: -15px;
+    }
     
     @media screen and (max-width: 960px) {
       .NavbarItems {
